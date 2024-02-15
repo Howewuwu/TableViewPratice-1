@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		9C0DB1CE2B7B7BBC004BD5B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1CD2B7B7BBC004BD5B7 /* AppDelegate.swift */; };
 		9C0DB1D02B7B7BBC004BD5B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1CF2B7B7BBC004BD5B7 /* SceneDelegate.swift */; };
-		9C0DB1D22B7B7BBC004BD5B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1D12B7B7BBC004BD5B7 /* ViewController.swift */; };
 		9C0DB1D52B7B7BBC004BD5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DB1D32B7B7BBC004BD5B7 /* Main.storyboard */; };
 		9C0DB1D72B7B7BBE004BD5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DB1D62B7B7BBE004BD5B7 /* Assets.xcassets */; };
 		9C0DB1DA2B7B7BBE004BD5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DB1D82B7B7BBE004BD5B7 /* LaunchScreen.storyboard */; };
+		9C0DB1E22B7BE41D004BD5B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E12B7BE41D004BD5B7 /* Model.swift */; };
+		9C0DB1E42B7BE613004BD5B7 /* PokeItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E32B7BE613004BD5B7 /* PokeItemTableViewController.swift */; };
+		9C0DB1E62B7BE63E004BD5B7 /* categoryBallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E52B7BE63E004BD5B7 /* categoryBallTableViewCell.swift */; };
+		9C0DB1E82B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E72B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift */; };
+		9C0DB1EA2B7CA50E004BD5B7 /* TableViewCell+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */; };
+		9C0DB1EC2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */; };
+		9C0DB1EE2B7D4432004BD5B7 /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C0DB1CA2B7B7BBC004BD5B7 /* TableViewPratice-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewPratice-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0DB1CD2B7B7BBC004BD5B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C0DB1CF2B7B7BBC004BD5B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C0DB1D12B7B7BBC004BD5B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C0DB1D42B7B7BBC004BD5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C0DB1D62B7B7BBE004BD5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0DB1D92B7B7BBE004BD5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0DB1DB2B7B7BBE004BD5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0DB1E12B7BE41D004BD5B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9C0DB1E32B7BE613004BD5B7 /* PokeItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItemTableViewController.swift; sourceTree = "<group>"; };
+		9C0DB1E52B7BE63E004BD5B7 /* categoryBallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryBallTableViewCell.swift; sourceTree = "<group>"; };
+		9C0DB1E72B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItemDetailViewController.swift; sourceTree = "<group>"; };
+		9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Static.swift"; sourceTree = "<group>"; };
+		9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryMedicineTableViewCell.swift; sourceTree = "<group>"; };
+		9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 			children = (
 				9C0DB1CD2B7B7BBC004BD5B7 /* AppDelegate.swift */,
 				9C0DB1CF2B7B7BBC004BD5B7 /* SceneDelegate.swift */,
-				9C0DB1D12B7B7BBC004BD5B7 /* ViewController.swift */,
 				9C0DB1D32B7B7BBC004BD5B7 /* Main.storyboard */,
+				9C0DB1E32B7BE613004BD5B7 /* PokeItemTableViewController.swift */,
+				9C0DB1E52B7BE63E004BD5B7 /* categoryBallTableViewCell.swift */,
+				9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */,
+				9C0DB1E72B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift */,
+				9C0DB1E12B7BE41D004BD5B7 /* Model.swift */,
+				9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */,
+				9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */,
 				9C0DB1D62B7B7BBE004BD5B7 /* Assets.xcassets */,
 				9C0DB1D82B7B7BBE004BD5B7 /* LaunchScreen.storyboard */,
 				9C0DB1DB2B7B7BBE004BD5B7 /* Info.plist */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0DB1D22B7B7BBC004BD5B7 /* ViewController.swift in Sources */,
+				9C0DB1EA2B7CA50E004BD5B7 /* TableViewCell+Static.swift in Sources */,
+				9C0DB1E22B7BE41D004BD5B7 /* Model.swift in Sources */,
+				9C0DB1E82B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift in Sources */,
 				9C0DB1CE2B7B7BBC004BD5B7 /* AppDelegate.swift in Sources */,
+				9C0DB1EE2B7D4432004BD5B7 /* DetailButton.swift in Sources */,
 				9C0DB1D02B7B7BBC004BD5B7 /* SceneDelegate.swift in Sources */,
+				9C0DB1EC2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift in Sources */,
+				9C0DB1E62B7BE63E004BD5B7 /* categoryBallTableViewCell.swift in Sources */,
+				9C0DB1E42B7BE613004BD5B7 /* PokeItemTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +322,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +350,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

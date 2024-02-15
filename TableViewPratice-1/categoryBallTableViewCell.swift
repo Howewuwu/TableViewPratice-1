@@ -9,12 +9,17 @@ import UIKit
 
 class categoryBallTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var detailButton: DetailButton!
     
-    @IBOutlet weak var itemLabel: UILabel!
     
-    @IBOutlet weak var detailButton: UIButton!
+    func update(item: Item) {
+        itemImageView.image = UIImage(named: item.imageName)
+        itemNameLabel.text = item.name
+        detailButton.id = item.id
+    }
+    
     
     
     override func awakeFromNib() {
@@ -22,6 +27,8 @@ class categoryBallTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

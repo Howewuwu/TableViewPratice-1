@@ -8,22 +8,33 @@
 import UIKit
 
 class PokeItemDetailViewController: UIViewController {
-
+    
+    var item: Item?
+    
+    @IBOutlet weak var itemName: UILabel?
+    
+    @IBOutlet weak var itemImageView: UIImageView?
+    
+    @IBOutlet weak var itemDescription: UITextView?
+    
+    @IBOutlet weak var otherLangurage: UITextView?
+    
+    static var reuseIdentifier: String { "\(Self.self)" }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        update(item: item!)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func update(item: Item) {
+        
+        itemName?.text = item.name
+        itemImageView?.image = UIImage(named: item.name)
+        itemDescription?.text = item.description
+        otherLangurage?.text = item.otherLangurage
+        
     }
-    */
 
 }

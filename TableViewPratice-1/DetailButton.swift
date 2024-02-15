@@ -5,4 +5,10 @@
 //  Created by Howe on 2024/2/15.
 //
 
-import Foundation
+import UIKit
+
+class DetailButton: UIButton {
+    
+    var id: Item.ID?
+    
+}

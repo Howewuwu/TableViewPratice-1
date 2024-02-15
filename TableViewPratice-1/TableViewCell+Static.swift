@@ -1,5 +1,5 @@
 //
-//  PokeItemTableViewCell+Static.swift
+//  TableViewCell+Static.swift
 //  TableViewPratice-1
 //
 //  Created by Howe on 2024/2/14.
@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 
 extension categoryBallTableViewCell {
+    
+    static var reuseIdentifier: String { "\(Self.self)" }
+    
+}
+
+
+
+extension categoryMedicineTableViewCell {
     
     static var reuseIdentifier: String { "\(Self.self)" }
     
