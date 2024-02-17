@@ -19,6 +19,7 @@
 		9C0DB1EA2B7CA50E004BD5B7 /* TableViewCell+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */; };
 		9C0DB1EC2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */; };
 		9C0DB1EE2B7D4432004BD5B7 /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */; };
+		9C0DB1F02B7E9F76004BD5B7 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DB1EF2B7E9F76004BD5B7 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Static.swift"; sourceTree = "<group>"; };
 		9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryMedicineTableViewCell.swift; sourceTree = "<group>"; };
 		9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
+		9C0DB1EF2B7E9F76004BD5B7 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +74,13 @@
 				9C0DB1CF2B7B7BBC004BD5B7 /* SceneDelegate.swift */,
 				9C0DB1D32B7B7BBC004BD5B7 /* Main.storyboard */,
 				9C0DB1E32B7BE613004BD5B7 /* PokeItemTableViewController.swift */,
+				9C0DB1E72B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift */,
 				9C0DB1E52B7BE63E004BD5B7 /* categoryBallTableViewCell.swift */,
 				9C0DB1EB2B7D2967004BD5B7 /* categoryMedicineTableViewCell.swift */,
-				9C0DB1E72B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift */,
 				9C0DB1E12B7BE41D004BD5B7 /* Model.swift */,
 				9C0DB1ED2B7D4432004BD5B7 /* DetailButton.swift */,
 				9C0DB1E92B7CA50E004BD5B7 /* TableViewCell+Static.swift */,
+				9C0DB1EF2B7E9F76004BD5B7 /* Array+Extensions.swift */,
 				9C0DB1D62B7B7BBE004BD5B7 /* Assets.xcassets */,
 				9C0DB1D82B7B7BBE004BD5B7 /* LaunchScreen.storyboard */,
 				9C0DB1DB2B7B7BBE004BD5B7 /* Info.plist */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0DB1EA2B7CA50E004BD5B7 /* TableViewCell+Static.swift in Sources */,
+				9C0DB1F02B7E9F76004BD5B7 /* Array+Extensions.swift in Sources */,
 				9C0DB1E22B7BE41D004BD5B7 /* Model.swift in Sources */,
 				9C0DB1E82B7BE6FA004BD5B7 /* PokeItemDetailViewController.swift in Sources */,
 				9C0DB1CE2B7B7BBC004BD5B7 /* AppDelegate.swift in Sources */,

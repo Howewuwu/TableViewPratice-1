@@ -7,26 +7,33 @@
 
 import Foundation
 
-struct PokemonItem {
-    let category: String
-    let item: [Item]
+// 定義一個遵循Identifiable協議的PokemonItem結構體，用於表示一個物品類別
+struct PokemonItem: Identifiable {
+    
+    var id = UUID() // 唯一標識符，遵循Identifiable協議必須
+    
+    let category: String // 物品類別的名稱
+    var item: [Item] // 屬於該類別的物品陣列
 }
 
 
+// 定義一個遵循Identifiable協議的Item結構體，用於表示單個物品
 struct Item: Identifiable {
     
-    var id = UUID()
+    var id = UUID() // 唯一標識符，同上
     
-    let name: String
-    let imageName: String
-    let description: String
-    let otherLangurage: String
+    let name: String // 物品的名稱
+    let imageName: String // 物品圖片的名稱
+    let description: String // 物品的描述
+    let otherLangurage: String // 物品名稱和描述的其他語言版本
 }
 
 
 
+// PokemonItem的擴展，提供一個靜態屬性來生成一個包含所有物品類別和物品的陣列
 extension PokemonItem {
     
+    // 這個靜態屬性返回一個包含所有預定義物品類別和物品的陣列
     static var pokemonItems: [PokemonItem] {
         
         let pokeBall = Item(name: "poke-ball", imageName: "poke-ball", description: "Catches wild Pokémon.", otherLangurage: """
@@ -166,6 +173,7 @@ extension PokemonItem {
        
         let medicineCategory = PokemonItem(category: "Medicine", item: [antidote, awakening, burnHeal, iceHeal, fullHeal, fullRestore])
         
+        // 返回包含所有物品類別的陣列
         return [ballCategory, medicineCategory ]
         
     }

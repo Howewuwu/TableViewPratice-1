@@ -26,21 +26,22 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FGG-bA-1NI">
                                             <rect key="frame" x="21" y="31" width="333" height="38"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="755" image="poke-ball" translatesAutoresizingMaskIntoConstraints="NO" id="fl8-fp-TWy">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="254" image="poke-ball" translatesAutoresizingMaskIntoConstraints="NO" id="fl8-fp-TWy">
                                                     <rect key="frame" x="0.0" y="0.0" width="32" height="38"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Pokemonball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-cc-bpk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Pokemonball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-cc-bpk">
                                                     <rect key="frame" x="37.000000000000014" y="0.0" width="223.33333333333337" height="38"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" verticalHuggingPriority="260" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-Jp-hag" customClass="DetailButton" customModule="TableViewPratice_1" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-Jp-hag" customClass="DetailButton" customModule="TableViewPratice_1" customModuleProvider="target">
                                                     <rect key="frame" x="265.33333333333331" y="0.0" width="67.666666666666686" height="38"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Detail"/>
                                                     <connections>
-                                                        <action selector="show:" destination="4B6-vH-5sm" eventType="touchUpInside" id="9IH-6X-YWb"/>
+                                                        <action selector="detailButtonTap:" destination="rmy-0U-TsY" eventType="touchUpInside" id="PfD-EL-xqF"/>
+                                                        <action selector="show:" destination="4B6-vH-5sm" eventType="touchUpInside" id="2TF-lI-ZSn"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -57,6 +58,7 @@
                                     <outlet property="detailButton" destination="u5X-Jp-hag" id="OLu-Iv-q53"/>
                                     <outlet property="itemImageView" destination="fl8-fp-TWy" id="V07-lf-UdA"/>
                                     <outlet property="itemNameLabel" destination="w6R-cc-bpk" id="Ogu-PO-Tbk"/>
+                                    <segue destination="vss-Xs-B5I" kind="show" identifier="showWithPrepare" destinationCreationSelector="showWithSegue:" id="b3Y-UN-VsY"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryMedicineTableViewCell" rowHeight="100" id="ZBf-KW-zuR" customClass="categoryMedicineTableViewCell" customModule="TableViewPratice_1" customModuleProvider="target">
@@ -74,7 +76,7 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Detail"/>
                                                     <connections>
-                                                        <action selector="show:" destination="4B6-vH-5sm" eventType="touchUpInside" id="QD8-rf-ZIV"/>
+                                                        <action selector="show:" destination="4B6-vH-5sm" eventType="touchUpInside" id="X5Q-Eq-4wF"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="antidote" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMm-Cj-pRa">
@@ -100,6 +102,7 @@
                                     <outlet property="detailButton" destination="MGM-eI-C3z" id="koR-1E-pDE"/>
                                     <outlet property="itemImageView" destination="xu9-Te-qDq" id="819-Ot-pbQ"/>
                                     <outlet property="itemNameLabel" destination="FMm-Cj-pRa" id="3PH-Qr-Spb"/>
+                                    <segue destination="vss-Xs-B5I" kind="show" identifier="showWithPrepare" destinationCreationSelector="showWithSegue:" id="ijj-2k-qOS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -112,7 +115,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4QD-3D-Jtn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="72.413793103448285"/>
+            <point key="canvasLocation" x="1634" y="-74"/>
         </scene>
         <!--Poke Item Detail View Controller-->
         <scene sceneID="iaY-vp-MEO">
@@ -123,25 +126,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="master-ball" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-FO-Wh9">
-                                <rect key="frame" x="93.666666666666671" y="50.000000000000014" width="187.66666666666663" height="162.33333333333337"/>
+                                <rect key="frame" x="93.666666666666671" y="94.000000000000014" width="187.66666666666663" height="162.33333333333337"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="255" text="master-ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doV-eb-GGP">
-                                <rect key="frame" x="140.33333333333334" y="227.33333333333334" width="94.333333333333343" height="20.333333333333343"/>
+                                <rect key="frame" x="140.33333333333334" y="271.33333333333331" width="94.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="254" text="Catches any wild Pokémon without fail." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ulb-iR-PXU">
-                                <rect key="frame" x="37.666666666666657" y="267.66666666666669" width="300" height="81.333333333333314"/>
+                                <rect key="frame" x="37.666666666666657" y="311.66666666666669" width="300" height="81.333333333333314"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="goo-D6-W2Y">
-                                <rect key="frame" x="18.666666666666657" y="359" width="337.66666666666674" height="269"/>
+                                <rect key="frame" x="18.666666666666657" y="403" width="337.66666666666674" height="225"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">        English   Master Ball
+                                <string key="text">        English   Master Ball
         Japanese  マスターボール
         German    Meisterball
         French    Master Ball
@@ -149,7 +152,7 @@
         Spanish   Master Ball
         Korean    마스터볼
         Chinese (Simplified)    大师球
-        Chinese (Traditional)   大師球</mutableString>
+        Chinese (Traditional)   大師球</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -174,6 +177,7 @@
                             <constraint firstItem="ulb-iR-PXU" firstAttribute="centerX" secondItem="vbU-31-fq7" secondAttribute="centerX" id="y7C-fY-NTE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="izC-pk-FRa"/>
                     <connections>
                         <outlet property="itemDescription" destination="ulb-iR-PXU" id="pcf-Uc-dqU"/>
                         <outlet property="itemImageView" destination="rX3-FO-Wh9" id="ict-94-H5F"/>
@@ -183,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC9-mr-Mla" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2621.5999999999999" y="71.674876847290648"/>
+            <point key="canvasLocation" x="2454" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ite-l6-evZ">
@@ -204,6 +208,9 @@
             <point key="canvasLocation" x="893.60000000000002" y="72.413793103448285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ijj-2k-qOS"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="antidote" width="32" height="32"/>
         <image name="master-ball" width="32" height="32"/>
