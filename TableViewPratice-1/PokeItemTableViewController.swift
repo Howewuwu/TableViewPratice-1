@@ -103,17 +103,25 @@ class PokeItemTableViewController: UITableViewController {
         }
     }
     
-    // 處理單元格的移動操作，這裡沒有具體實現
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        // 獲取被移動的元素
+        let movingElement = items[fromIndexPath.section].item.remove(at: fromIndexPath.row)
         
-        let fromElement = items[fromIndexPath.section].item[fromIndexPath.row]
-        let toElement = items[to.section].item[to.row]
+        // 如果移動在同一section內
+        if fromIndexPath.section == to.section {
+            // 直接在新位置插入元素
+            items[to.section].item.insert(movingElement, at: to.row)
+        } else {
+            // 如果移動到不同的section，處理方式稍有不同
+            // 首先，在新的位置插入元素
+            items[to.section].item.insert(movingElement, at: to.row)
+        }
         
-        items[to.section].item[to.row] = fromElement
-        items[fromIndexPath.section].item[fromIndexPath.row] = toElement
-        tableView.reloadData()
-        
+        // 使用tableView的moveRow方法來更新UI，這個方法會處理動畫和最終的UI狀態
+        // 注意，這裡不需要再調用reloadData()
+        tableView.moveRow(at: fromIndexPath, to: to)
     }
+
     
     // 設置表格視圖是否允許移動單元格
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
@@ -190,7 +198,7 @@ class PokeItemTableViewController: UITableViewController {
         // 獲取選中的物品
         let selectItem = items[indexPath.section].item[indexPath.row]
         // 實例化詳情視圖控制器
-        let controller = PokeItemDetailViewController()
+        let controller = storyboard?.instantiateViewController(withIdentifier: PokeItemDetailViewController.reuseIdentifier) as! PokeItemDetailViewController
         
         // 設置詳情視圖控制器的物品
         controller.item = selectItem

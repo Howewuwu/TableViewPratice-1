@@ -5,7 +5,6 @@
 //  Created by Howe on 2024/2/14.
 //
 
-import Foundation
 import UIKit
 
 // 為categoryBallTableViewCell添加一個擴展
